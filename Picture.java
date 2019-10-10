@@ -49,9 +49,6 @@ public class Picture
         roof.moveVertical(-60);
         roof.makeVisible();
 
-        
-        
-        
         campo = new Square();
         campo.changeColor("green");
         campo.changeSize(80);
@@ -62,13 +59,18 @@ public class Picture
         
         sun = new Circle();
         sun.changeColor("yellow");
+        sun.moveVertical(90);
         sun.moveHorizontal(100);
-        sun.moveVertical(100);
         sun.changeSize(80);
         sun.makeVisible();
-        sun.slowMoveVertical(-120);
+        sun.slowMoveVertical(-90);
     }
 
+    public void atardecer() {
+           
+        sun.slowMoveVertical(90);
+        
+    }
     /**
      * Change this picture to black/white display
      */
